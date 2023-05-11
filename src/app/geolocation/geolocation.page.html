@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button routerLink="/home"> <!-- This is the icon on the pages that direct me back to the home page -->
+        <ion-icon name="home"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Geolocation</ion-title> <!-- Name of the page -->
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="geolocation-content">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Geolocation</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-button (click)="getGPS()" expand="full" class="gps-button">Get GPS</ion-button> <!-- calling a method that gives me back my gps location -->
+  <h2 class="latitude">Latitude: {{ lat }}</h2>
+  <h2 class="longitude">Longitude: {{ long }}</h2>
+  <ion-button (click)="openBrowser()">Met éireann</ion-button>  <!-- calling a method that allows me acces to the met éireann website  -->
+</ion-content>

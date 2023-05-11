@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button routerLink="/home"> <!-- This is the icon on the pages that direct me back to the home page -->
+        <ion-icon name="home"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>
+      The Weather <!-- Name of my page -->
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="weather-content">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Weather</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <h1 class="weather-heading">Weather Data</h1>
+  <ul class="weather-list">
+    <li class="weather-location">Location: Galway</li> <!-- Heading of the loaction  -->
+    <li *ngFor="let y of myWeather" class="weather-forecast">Forecast: {{ y.main }}, {{ y.description }}.</li> <!-- using 2-way binding to call the weather description and main  -->
+  </ul>
+</ion-content>

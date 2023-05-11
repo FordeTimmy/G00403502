@@ -1,0 +1,30 @@
+.weather-content {//stying the weather home page using css 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .weather-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .weather-list {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 10px;
+  }
+  
+  .weather-location {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .weather-forecast {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  

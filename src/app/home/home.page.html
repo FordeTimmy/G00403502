@@ -1,19 +1,21 @@
-<ion-header [translucent]="true">
+<ion-header>
   <ion-toolbar>
     <ion-title>
-      Blank
+      Weather App <!-- Name of the page -->
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
- <h3>Welcome to Mobile Apps Starter project 2023</h3>
+<ion-content class="home-content">
+  <div class="logo-container"> <!-- trying to import an image for my homepage-->
+    <img src="assets/images/weather_logo.png" alt="Weather App Logo" class="logo-image">
   </div>
+<!--This brings you to the location page-->
+  <ion-button expand="full" class="location-button" (click)="goToGeolocationPage()">Your Location</ion-button>
+<!--This brings you to the weather page-->
+  <ion-button expand="full" class="weather-button" (click)="goToWeather()">The Weather</ion-button>
+<!--This brings you to the weather facts page-->
+  <ion-button expand="full" class="facts-button" (click)="goToWeatherFacts()">Weather Facts</ion-button>
+<!--This brings you to the weather quiz page-->
+  <ion-button expand="full" class="quiz-button" (click)="goToWeatherQuiz()">Weather Quiz</ion-button>
 </ion-content>

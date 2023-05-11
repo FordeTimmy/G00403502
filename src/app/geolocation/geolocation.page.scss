@@ -1,0 +1,19 @@
+.geolocation-content { //styling the gelocation page with css
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .gps-button {
+    margin-top: 20px;
+    width: 200px;
+  }
+  
+  .latitude,
+  .longitude {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  
